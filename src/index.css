@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-h2: 1.5rem;
+  --font-h3-intro: 1.125rem;
+  --font-h4-p-btn: 1rem;
+  --font-p-date: 0.875rem;
+  --color-main: #4f4f4f;
+  --color-second: #828282;
+  --color-third: #e0e0e0;
+  --color-a-btn: #2f80ed;
+  --color-other: #333333;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.App {
+  padding: 5rem;
+  background-color: #f2f2f2;
+  margin: auto;
+}
+
+.personal-details,
+.hobbies,
+.skills,
+.projects,
+.experiences,
+.blogs {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.personal-details {
+  width: 80%;
+  display: grid;
+  grid:
+    "avatar name-title name-title contact contact" 1fr
+    "avatar intro intro intro intro" 1fr
+    "avatar intro intro intro intro" 1fr
+    /1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.avatar {
+  grid-area: avatar;
+}
+.avatar img {
+}
+.name-title {
+  grid-area: name-title;
+}
+.name-title h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4f4f4f;
+}
+.name-title h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+.contact {
+  grid-area: contact;
+}
+.contact p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #4f4f4f;
+}
+.intro {
+  grid-area: intro;
+  margin-top: 2rem;
+}
+.intro p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #828282;
+}
