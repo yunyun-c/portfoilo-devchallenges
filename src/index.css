@@ -28,12 +28,22 @@ body {
   padding: 5rem;
   background-color: #f2f2f2;
   margin: auto;
+  display: grid;
+  grid:
+    "personal-details personal-details personal-details" 1fr
+    "skills blogs blogs" 1fr
+    "hobbies blogs blogs" 1fr
+    "hobbies experiences experiences" 1fr
+    "projects projects projects" 1fr
+    /1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .personal-details,
 .hobbies,
 .skills,
-.projects,
+.title,
+.project,
 .experiences,
 .blogs {
   background-color: #ffffff;
@@ -42,19 +52,21 @@ body {
 }
 
 .personal-details {
-  width: 80%;
+  grid-area: personal-details;
   display: grid;
   grid:
     "avatar name-title name-title contact contact" 1fr
     "avatar intro intro intro intro" 1fr
     "avatar intro intro intro intro" 1fr
-    /1fr 1fr 1fr 1fr 1fr;
+    /1.5fr 0.5fr 1.5fr 0.5fr 1fr;
   gap: 0.5rem;
 }
 .avatar {
   grid-area: avatar;
 }
 .avatar img {
+  width: 100%;
+  height: auto;
 }
 .name-title {
   grid-area: name-title;
@@ -74,7 +86,9 @@ body {
 .contact {
   grid-area: contact;
 }
-.contact p {
+
+.contact p,
+.contact.material-symbols-outlined {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -85,10 +99,290 @@ body {
   grid-area: intro;
   margin-top: 2rem;
 }
-.intro p {
+p.intro {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+
+  color: #828282;
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+.hobbies h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  margin-bottom: 2rem;
+
+  color: #4f4f4f;
+}
+
+.hobbie {
+  margin-bottom: 2rem;
+}
+.hobbie img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.hobbie h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.hobbie p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #828282;
+}
+
+.skills {
+  grid-area: skills;
+}
+.skills h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+.skill {
+  padding: 1rem;
+}
+.skill.material-symbols-outlined {
+  font-family: "Material Icons";
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.title h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #4f4f4f;
+}
+
+.title button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  border: 1px solid #4f4f4f;
+  border-radius: 12px;
+  color: #4f4f4f;
+  background-color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.title button:hover {
+  color: #ffffff;
+  background: #2f80ed;
+  border: 1px solid #2f80ed;
+}
+
+.project-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project {
+  width: 33%;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 1rem;
+
+  color: #333333;
+}
+
+.project p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 2rem;
+
+  color: #828282;
+}
+
+.project p.sk {
+  color: #4f4f4f;
+  margin-bottom: 1rem;
+}
+
+.project-btn {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.project-btn button {
+  border: 1px solid #2f80ed;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 0.7rem 3rem;
+  background-color: transparent;
+}
+.project-btn button:hover {
+  color: #ffffff;
+  background: #2f80ed;
+}
+
+.project-btn a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #2f80ed;
+  text-decoration: none;
+}
+.project-btn a:hover {
+  color: #ffffff;
+  background: #2f80ed;
+}
+
+.experiences {
+  grid-area: experiences;
+}
+
+.experiences h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 2rem;
+
+  color: #4f4f4f;
+}
+
+.experience img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.experience p span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 1rem;
+
+  color: #828282;
+}
+
+.experience h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 1.5rem;
+
+  color: #333333;
+}
+
+.experience ul li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0.1rem;
+  color: #828282;
+}
+
+.blogs {
+  grid-area: blogs;
+}
+
+.blogs h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 2rem;
+
+  color: #e0e0e0;
+}
+.blog {
+  margin-bottom: 2rem;
+}
+.title-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.blog h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+.blog img {
+  width: 100%;
+  max-width: 30%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+.blog p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 3rem;
+
+  color: #828282;
+}
+.blog a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f80ed;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 
   color: #828282;
 }

@@ -3,6 +3,7 @@ import React from "react";
 const Hobbies = ({ hobbies }) => {
   return (
     <div className="hobbies">
+      <h2>Hobbies</h2>
       <div className="hobbie-list">
         {hobbies.map((hobbie) => (
           <div key={hobbie.id} className="hobbie">

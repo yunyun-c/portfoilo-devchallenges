@@ -9,8 +9,11 @@ const Experiences = ({ experiences }) => {
           <div key={experience.id} className="experience">
             <img src={experience.companyLogo} alt={experience.companyName} />
             <div className="details">
-              <h3>{experience.companyName}</h3>
-              <p>{experience.jobTitle}</p>
+              <p>
+                <span>{experience.date}</span>
+              </p>
+              <h3>{experience.jobTitle}</h3>
+
               <ul>
                 {experience.workDetails.map((detail) => (
                   <li key={detail.id}>{detail.detail}</li>

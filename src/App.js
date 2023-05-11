@@ -9,7 +9,7 @@ import Blogs from "./Blogs";
 const App = () => {
   // Personal details data
   const personalDetailsData = {
-    myAvatar: "https://example.com/avatar.jpg",
+    myAvatar: "./img/avatar.jpg",
     name: "Cassie",
     jobTitle: "Front-end Developer",
     email: "cassie@example.com",
@@ -22,21 +22,21 @@ const App = () => {
   const hobbiesData = [
     {
       id: 1,
-      picture: "p1",
+      picture: "img/cooking.jpg",
       title: "Cooking",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.",
     },
     {
       id: 2,
-      picture: "p2",
+      picture: "img/biking.jpg",
       title: "Biking",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.",
     },
     {
       id: 3,
-      picture: "p3",
+      picture: "/img/cities.jpg",
       title: "Explore cities",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.",
@@ -45,30 +45,40 @@ const App = () => {
 
   // Skills data
   const skillsData = [
-    { name: "HTML", icon: "html-icon" },
-    { name: "CSS", icon: "css-icon" },
-    { name: "JavaScript", icon: "js-icon" },
+    { name: "HTML", icon: "html" },
+    { name: "CSS", icon: "css" },
+    { name: "JavaScript", icon: "javascript" },
   ];
 
   // Projects data
   const projectsData = [
     {
       id: 1,
-      picture: "p1",
-      skills: "#HTML #CSS #responsive",
+      picture: "/img/p1.jpg",
+      skills: "#HTML  #CSS  #responsive",
       title: "Project 1",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-      tags: ["tag1", "tag2"],
+      demoLink: "https://github.com/project1",
       githubLink: "https://github.com/project1",
     },
     {
       id: 2,
-      picture: "p2",
-      skills: "#HTML #CSS #responsive",
+      picture: "/img/p2.jpg",
+      skills: "#HTML  #CSS  #responsive",
       title: "Project 2",
       description:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      tags: ["tag2", "tag3"],
+      demoLink: "https://github.com/project1",
+      githubLink: "https://github.com/project2",
+    },
+    {
+      id: 3,
+      picture: "/img/p3.jpg",
+      skills: "#HTML  #CSS  #responsive",
+      title: "Project 3",
+      description:
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      demoLink: "https://github.com/project1",
       githubLink: "https://github.com/project2",
     },
   ];
@@ -78,6 +88,7 @@ const App = () => {
     {
       id: 1,
       companyLogo: "company 1",
+      date: "Feb 2017 - Current",
       companyName: "companyName 1",
       jobTitle: "front-end developer",
       workDetails: [
@@ -100,6 +111,7 @@ const App = () => {
     {
       id: 2,
       companyLogo: "company 2",
+      date: "Aug 2016 - Feb 2018",
       companyName: "companyName 2",
       jobTitle: "front-end developer",
       workDetails: [
@@ -126,14 +138,16 @@ const App = () => {
     {
       id: 1,
       title: "Blog Title 1",
-      date: "January 1, 2023",
+      picture: "./img/blog.jpg",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit....",
+      blogLink: "#",
     },
     {
       id: 2,
       title: "Blog Title 2",
-      date: "February 15, 2023",
+      picture: "./img/cities.jpg",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit....",
+      blogLink: "#",
     },
   ];
 

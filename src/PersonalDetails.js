@@ -18,8 +18,13 @@ const PersonalDetails = ({
         <h3>{jobTitle}</h3>
       </div>
       <div className="contact">
-        <p>Email: {email}</p>
-        <p>Phone: {phone}</p>
+        <p>
+          <span className="material-symbols-outlined">mail</span> Email: {email}
+        </p>
+
+        <p>
+          <span className="material-symbols-outlined">call</span> Phone: {phone}
+        </p>
       </div>
 
       <p className="intro">{selfIntro}</p>
