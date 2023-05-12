@@ -15,28 +15,28 @@ const App = () => {
     email: "cassie@example.com",
     phone: "123-456-7890",
     selfIntro:
-      "I am a passionate developer with experience in front-end technologies.",
+      "Self-motivated developer, who is willing to learn and create outstanding UI applications. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie. ",
   };
 
   // Hobbies data
   const hobbiesData = [
     {
       id: 1,
-      picture: "img/cooking.jpg",
+      picture: "./img/cooking.jpg",
       title: "Cooking",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.",
     },
     {
       id: 2,
-      picture: "img/biking.jpg",
+      picture: "./img/biking.jpg",
       title: "Biking",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.",
     },
     {
       id: 3,
-      picture: "/img/cities.jpg",
+      picture: "./img/cities.jpg",
       title: "Explore cities",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos.",
@@ -45,41 +45,44 @@ const App = () => {
 
   // Skills data
   const skillsData = [
-    { name: "HTML", icon: "html" },
-    { name: "CSS", icon: "css" },
-    { name: "JavaScript", icon: "javascript" },
+    { name: "HTML", icon: "fa-brands fa-html5" },
+    { name: "CSS", icon: "fa-brands fa-css3-alt" },
+    { name: "JavaScript", icon: "fa-brands fa-js" },
+    { name: "node.js", icon: "fa-brands fa-node" },
+    { name: "react.js", icon: "fa-brands fa-react" },
+    { name: "sass", icon: "fa-brands fa-sass" },
   ];
 
   // Projects data
   const projectsData = [
     {
       id: 1,
-      picture: "/img/p1.jpg",
+      picture: "./img/p1.png",
       skills: "#HTML  #CSS  #responsive",
-      title: "Project 1",
+      title: "My Gallery",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-      demoLink: "https://github.com/project1",
-      githubLink: "https://github.com/project1",
+      demoLink: "https://my-gallery-project-devchallenge.netlify.app/",
+      githubLink: "https://github.com/yunyun-c/my-gallery",
     },
     {
       id: 2,
-      picture: "/img/p2.jpg",
+      picture: "./img/p2.png",
       skills: "#HTML  #CSS  #responsive",
-      title: "Project 2",
+      title: "Edie homepage",
       description:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      demoLink: "https://github.com/project1",
-      githubLink: "https://github.com/project2",
+      demoLink: "https://edie-homepage-from-devchallenges.netlify.app/",
+      githubLink: "https://github.com/yunyun-c/edie-homepage",
     },
     {
       id: 3,
-      picture: "/img/p3.jpg",
+      picture: "./img/p3.png",
       skills: "#HTML  #CSS  #responsive",
-      title: "Project 3",
+      title: "Checkout Page",
       description:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      demoLink: "https://github.com/project1",
-      githubLink: "https://github.com/project2",
+      demoLink: "https://checkout-page-project.netlify.app/",
+      githubLink: "https://github.com/yunyun-c/checkout-page",
     },
   ];
 
@@ -87,7 +90,7 @@ const App = () => {
   const experiencesData = [
     {
       id: 1,
-      companyLogo: "company 1",
+      companyLogo: "./img/company1.jpg",
       date: "Feb 2017 - Current",
       companyName: "companyName 1",
       jobTitle: "front-end developer",
@@ -110,7 +113,7 @@ const App = () => {
     },
     {
       id: 2,
-      companyLogo: "company 2",
+      companyLogo: "./img/company2.jpg",
       date: "Aug 2016 - Feb 2018",
       companyName: "companyName 2",
       jobTitle: "front-end developer",
@@ -137,17 +140,19 @@ const App = () => {
   const blogsData = [
     {
       id: 1,
-      title: "Blog Title 1",
+      title: "How to organize your CSS",
       picture: "./img/blog.jpg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit....",
-      blogLink: "#",
+      content:
+        "In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      blogLink: "https://github.com/yunyun-c",
     },
     {
       id: 2,
-      title: "Blog Title 2",
+      title: "How to manage your time effectively",
       picture: "./img/cities.jpg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit....",
-      blogLink: "#",
+      content:
+        "In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.",
+      blogLink: "https://github.com/yunyun-c",
     },
   ];
 

@@ -18,12 +18,10 @@ const Projects = ({ projects }) => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="project-btn">
-              <button>
-                <a href={project.demoLink}>Demo</a>
-              </button>
-              <button>
-                <a href={project.githubLink}>Code</a>
-              </button>
+              <a className="demo" href={project.demoLink}>
+                Demo
+              </a>
+              <a href={project.githubLink}>Code</a>
             </div>
           </div>
         ))}

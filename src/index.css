@@ -30,11 +30,11 @@ body {
   margin: auto;
   display: grid;
   grid:
-    "personal-details personal-details personal-details" 1fr
+    "personal-details personal-details personal-details" 0.5fr
     "skills blogs blogs" 1fr
     "hobbies blogs blogs" 1fr
     "hobbies experiences experiences" 1fr
-    "projects projects projects" 1fr
+    "projects projects projects" 1.5fr
     /1fr 1fr 1fr;
   gap: 2rem;
 }
@@ -49,16 +49,16 @@ body {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 2rem;
+  box-shadow: 0px 1px 1px 1px #d3d3d3;
 }
 
 .personal-details {
   grid-area: personal-details;
   display: grid;
   grid:
-    "avatar name-title name-title contact contact" 1fr
-    "avatar intro intro intro intro" 1fr
-    "avatar intro intro intro intro" 1fr
-    /1.5fr 0.5fr 1.5fr 0.5fr 1fr;
+    "avatar name-title contact" 0.4fr
+    "avatar intro intro" 0.6fr
+    /1fr 1fr 1fr;
   gap: 0.5rem;
 }
 .avatar {
@@ -67,9 +67,11 @@ body {
 .avatar img {
   width: 100%;
   height: auto;
+  border-radius: 10%;
 }
 .name-title {
   grid-area: name-title;
+  padding-left: 0.5rem;
 }
 .name-title h2 {
   font-weight: 600;
@@ -97,7 +99,7 @@ body {
 }
 .intro {
   grid-area: intro;
-  margin-top: 2rem;
+  padding-left: 0.5rem;
 }
 p.intro {
   font-weight: 500;
@@ -155,14 +157,25 @@ p.intro {
   text-transform: uppercase;
   color: #4f4f4f;
 }
+
+.skills-list {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: stretch;
+}
 .skill {
   padding: 1rem;
+  margin: 1rem 2rem;
 }
-.skill.material-symbols-outlined {
-  font-family: "Material Icons";
-  font-size: 18px;
-  line-height: 22px;
-  color: #4f4f4f;
+
+.skill i {
+  font-size: 50px;
+}
+.skill i.fa-brands {
+  color: #2f80ed;
 }
 
 .projects {
@@ -192,14 +205,22 @@ p.intro {
   background-color: #ffffff;
   padding: 0.5rem 1.5rem;
   margin-top: 1rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   cursor: pointer;
 }
 
 .title button:hover {
+  color: #2f80ed;
+  border: 1px solid #2f80ed;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.title button:active {
   color: #ffffff;
   background: #2f80ed;
   border: 1px solid #2f80ed;
+  transform: scale(1.2);
 }
 
 .project-list {
@@ -213,8 +234,9 @@ p.intro {
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 50%;
   margin-bottom: 1rem;
+  border-radius: 12px;
 }
 
 .project h3 {
@@ -246,29 +268,29 @@ p.intro {
   justify-content: space-between;
 }
 
-.project-btn button {
+.project-btn a {
   border: 1px solid #2f80ed;
   border-radius: 12px;
-  cursor: pointer;
-  padding: 0.7rem 3rem;
-  background-color: transparent;
-}
-.project-btn button:hover {
-  color: #ffffff;
-  background: #2f80ed;
-}
-
-.project-btn a {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
   color: #2f80ed;
+  padding: 0.7rem 3rem;
   text-decoration: none;
 }
 .project-btn a:hover {
   color: #ffffff;
   background: #2f80ed;
+}
+
+.project-btn a.demo {
+  color: #ffffff;
+  background: #2f80ed;
+}
+.project-btn a.demo:hover {
+  color: #2f80ed;
+  background: #ffffff;
 }
 
 .experiences {
@@ -285,7 +307,7 @@ p.intro {
 }
 
 .experience img {
-  width: 100%;
+  width: 30%;
   height: auto;
   border-radius: 12px;
 }
@@ -337,15 +359,17 @@ p.intro {
   color: #e0e0e0;
 }
 .blog {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .title-img {
   display: flex;
   align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 .blog h3 {
+  width: 20%;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -354,7 +378,8 @@ p.intro {
 }
 .blog img {
   width: 100%;
-  max-width: 30%;
+  max-width: 50%;
+
   height: auto;
   border-radius: 0.75rem;
 }
@@ -362,7 +387,7 @@ p.intro {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: 4.125rem;
 
   color: #828282;
 }
