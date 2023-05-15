@@ -19,11 +19,11 @@ const PersonalDetails = ({
       </div>
       <div className="contact">
         <p>
-          <span className="material-symbols-outlined">mail</span> Email: {email}
+          <i class="fa-solid fa-envelope"></i> Email: {email}
         </p>
 
         <p>
-          <span className="material-symbols-outlined">call</span> Phone: {phone}
+          <i class="fa-solid fa-phone"></i> Phone: {phone}
         </p>
       </div>
 

@@ -60,7 +60,8 @@ const App = () => {
       picture: "./img/p1.png",
       skills: "#HTML  #CSS  #responsive",
       title: "My Gallery",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      description:
+        "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io",
       demoLink: "https://my-gallery-project-devchallenge.netlify.app/",
       githubLink: "https://github.com/yunyun-c/my-gallery",
     },
@@ -70,7 +71,7 @@ const App = () => {
       skills: "#HTML  #CSS  #responsive",
       title: "Edie homepage",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io",
       demoLink: "https://edie-homepage-from-devchallenges.netlify.app/",
       githubLink: "https://github.com/yunyun-c/edie-homepage",
     },
@@ -80,7 +81,7 @@ const App = () => {
       skills: "#HTML  #CSS  #responsive",
       title: "Checkout Page",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io",
       demoLink: "https://checkout-page-project.netlify.app/",
       githubLink: "https://github.com/yunyun-c/checkout-page",
     },
